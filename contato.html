@@ -13,11 +13,11 @@
     <!-- Cabeçalho da Página (header) -->
     <header>
       <!-- Div Conteudo do Cabeçalho -->
-      <div id="header_content">
+      <div id="header_content" class="flex">
         <!-- Titulo do Cabeçalho -->
         <div id="titulo">
           <!-- Seu nome -->
-          <h1>Daniel Castro de Souza</h1>
+          <h1>Contato</h1>
         </div>
 
         <!-- Conteudo do Menu da Página (header) -->
@@ -27,17 +27,13 @@
             <!-- Marcadores não ordenados + links -->
             <ul id="menu">
               <li>
-                <a href="index.html"> Home </a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="contato.html"> Contato </a>
+                <a href="contato.html">Contato</a>
               </li>
               <li>
-                <a
-                  href="https://github.com/DanielCastrs?tab=repositories"
-                  target="_blank"
-                  >Projetos</a
-                >
+                <a href="projetos.html" target="_blank">Projetos</a>
               </li>
             </ul>
           </nav>
@@ -47,8 +43,9 @@
 
     <!-- Seção Principal da Página (main) -->
     <main>
-      <!-- Seção Formulário de Contato e Redes Sociais -->
-      <section id="contact">
+      <div id="contact" class="flex">
+        <!-- Seção Formulário de Contato e Redes Sociais -->
+
         <!-- Seção do Formulário-->
         <form action="#" method="submit" id="formulario">
           <label for="nome">Nome: </label>
@@ -94,7 +91,7 @@
         </form>
 
         <!-- Seção do Google Maps -->
-        <article id="mapa">
+        <section id="mapa" class="flex_start">
           <p>Av. Paulista, 100</p>
           <p>São Paulo - SP</p>
 
@@ -110,26 +107,34 @@
             id="mapa"
           >
           </iframe>
-        </article>
-      </section>
+        </section>
+      </div>
     </main>
 
     <!-- Rodapé da Página (footer) -->
-    <footer>
-      <!-- Seção de Contato - Redes Sociais -->
+    <footer class="flex">
+      <!-- Seção de Contato - Redes Sociais-->
       <section id="redes_sociais">
         <a href="">
-          <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+          <img
+            src="assets/img/linkedin.svg"
+            alt="LinkedIn"
+            class="social_icon"
+          />
         </a>
         <a href="">
-          <img src="assets/img/github.svg" alt="Github" />
+          <img src="assets/img/github.svg" alt="Github" class="social_icon" />
         </a>
         <a href="">
-          <img src="assets/img/instagram.svg" alt="Instagram" />
+          <img
+            src="assets/img/instagram.svg"
+            alt="Instagram"
+            class="social_icon"
+          />
         </a>
       </section>
 
-      <h3>Feito com 🧡 por Daniel Castro de Souza - 2025</h3>
+      <h3>Feito com 🧡 por Generation Brasil - 2024</h3>
     </footer>
   </body>
 </html>
