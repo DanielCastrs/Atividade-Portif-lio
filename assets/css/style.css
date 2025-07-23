@@ -78,15 +78,15 @@ body {
 
 :root {
   --purple-200: #9a7bd1;
-  --purple-500: #6b36c8;
-  --purple-800: #441f88;
+  --purple-500: rgb(4, 2, 139);
+  --purple-800: rgb(2, 0, 148);
 
-  --black-800: #171717;
+  --black-800: rgb(0, 0, 0);
 
-  --gray-200: #cccccc;
-  --gray-400: #505861;
+  --gray-200: rgb(132, 134, 134);
+  --gray-400: #919192;
 
-  --white: #f9f9f9;
+  --white: rgb(255, 255, 255);
 }
 
 html {
@@ -184,6 +184,10 @@ p {
 
 .img_profile {
   width: 200px;
+  border-radius: 45%;
+  border-style: groove;
+  border-color: var(--purple-500);
+  border-width: 5px;
 }
 
 /* Estilização da Seção Video */
@@ -192,6 +196,7 @@ p {
   flex-direction: column;
   margin: 2rem auto;
   width: 90%;
+  align-items: center;
 }
 
 /* Estilização da Seção Footer */
@@ -293,4 +298,17 @@ form button:hover {
   font-size: 1rem;
   text-align: justify;
   font-weight: 600;
+}
+
+hr {
+  border-color: #441f88;
+  border-style: dashed;
+}
+
+#titulo {
+  /* border: solid; */
+  height: 80px;
+  width: 800px;
+  /* align-items: center; */
+  justify-content: center;
 }

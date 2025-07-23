@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Projeto Portfólio" />
-    <meta name="author" content="Generation Brasil" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <title>Meu Perfil</title>
+    <meta name="author" content="Daniel Castro de Souza" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Portfolio, Daniel, Contato"
+    />
+    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <title>Contato</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -15,7 +19,7 @@
       <!-- Div Conteudo do Cabeçalho -->
       <div id="header_content" class="flex">
         <!-- Titulo do Cabeçalho -->
-        <div id="titulo">
+        <div id="titulo" class="flex">
           <!-- Seu nome -->
           <h1>Contato</h1>
         </div>
@@ -33,7 +37,7 @@
                 <a href="contato.html">Contato</a>
               </li>
               <li>
-                <a href="projetos.html" target="_blank">Projetos</a>
+                <a href="projetos.html">Projetos</a>
               </li>
             </ul>
           </nav>
@@ -55,6 +59,7 @@
             name="name"
             placeholder="Digite seu nome"
             required
+            onkeyup="validaNome()"
           />
           <span id="txtNome"></span>
 
@@ -65,6 +70,7 @@
             name="email"
             placeholder="Digite seu email"
             required
+            onkeyup="validaEmail()"
           />
           <span id="txtEmail"></span>
 
@@ -75,8 +81,9 @@
             name="subject"
             placeholder="Digite o título da mensagem"
             required
+            onkeyup="validaAssunto()"
           />
-          <span id="txtSubject"></span>
+          <span id="txtAssunto"></span>
 
           <label for="message">Mensagem: </label>
           <textarea
@@ -84,14 +91,14 @@
             name="message"
             placeholder="Digite sua mensagem"
             required
-          >
-          </textarea>
-
-          <button type="submit">Enviar</button>
+            onkeyup="validaMensagem()"
+          ></textarea>
+          <span id="txtMensagem"></span>
+          <button type="submit" onclick="enviar()">Enviar</button>
         </form>
 
         <!-- Seção do Google Maps -->
-        <section id="mapa" class="flex_start">
+        <section class="mapa" class="flex_start">
           <p>Av. Paulista, 100</p>
           <p>São Paulo - SP</p>
 
@@ -105,6 +112,8 @@
             aria-hidden="false"
             tabindex="0"
             id="mapa"
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()"
           >
           </iframe>
         </section>
@@ -115,26 +124,22 @@
     <footer class="flex">
       <!-- Seção de Contato - Redes Sociais-->
       <section id="redes_sociais">
-        <a href="">
-          <img
-            src="assets/img/linkedin.svg"
-            alt="LinkedIn"
-            class="social_icon"
-          />
+        <a
+          href="https://www.linkedin.com/in/daniel-castro-de-souza-602491133"
+          target="_blank"
+        >
+          <img src="assets/img/linkedin.svg" alt="LinkedIn" />
         </a>
-        <a href="">
-          <img src="assets/img/github.svg" alt="Github" class="social_icon" />
+        <a href="https://github.com/DanielCastrs" target="_blank">
+          <img src="assets/img/github.svg" alt="Github" />
         </a>
-        <a href="">
-          <img
-            src="assets/img/instagram.svg"
-            alt="Instagram"
-            class="social_icon"
-          />
+        <a href="https://www.instagram.com/danielcastrosz" target="_blank">
+          <img src="assets/img/instagram.svg" alt="Instagram" />
         </a>
       </section>
 
-      <h3>Feito com 🧡 por Generation Brasil - 2024</h3>
+      <h3>Feito com 🧡 por Daniel Castro de Souza - 2025</h3>
     </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
